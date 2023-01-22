@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import classes from'./App.module.css'
+import ProductData from './components/Product'
 
 
 function App() {
@@ -16,10 +17,13 @@ function App() {
       </header>
 
       <div className={classes.MainContainer}>
-        <div classeName={classes.ProductPreview}>
+        <div className={classes.ProductPreview}>
           <img src='https://imgur.com/iOeUBV7.png' alt='Product Preview'/>
         </div>
         <div className={classes.ProductData}>
+          <h1 className={classes.ProductTitle}>{ProductData.title} </h1>
+          <p className = {classes.ProductDescription}>{ProductData.description}</p><br/>
+          <h3>Select Color</h3>
           
         </div>
 
