@@ -5,6 +5,11 @@ import ProductData from './components/Product'
 
 
 function App() {
+
+  const currentHour = new Date().getHours() >9 ? new Date().getHours() : '0' + new Date().getHours();
+  const currentMinute = new Date().getMinutes() > 9 ? new Date().getMinutes() : '0' + new Date().getMinutes;
+
+  
   
   
 
@@ -20,6 +25,15 @@ function App() {
         <div className={classes.ProductPreview}>
           <img src='https://imgur.com/iOeUBV7.png' alt='Product Preview'/>
         </div>
+        {/* <div className={classes.TimeData}>
+          <p>{`${currentHour}:${currentMinute}`}</p>
+        </div> */}
+
+        <div className={classes.HeartData}>
+          <i class="fa-solid fa-heart-pulse"></i>
+          <p>78</p>
+        </div>
+
         <div className={classes.ProductData}>
           <h1 className={classes.ProductTitle}>{ProductData.title} </h1>
           <p className = {classes.ProductDescription}>{ProductData.description}</p><br/>
