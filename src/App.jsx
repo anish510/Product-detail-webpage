@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import classes from'./App.module.css'
 import ProductData from './components/Product'
+import ProductPreview from './components/Productreview';
 
 
 function App() {
@@ -23,15 +24,7 @@ function App() {
 
       <div className={classes.MainContainer}>
         <div className={classes.ProductPreview}>
-          <img src='https://imgur.com/iOeUBV7.png' alt='Product Preview'/>
-        </div>
-        {/* <div className={classes.TimeData}>
-          <p>{`${currentHour}:${currentMinute}`}</p>
-        </div> */}
-
-        <div className={classes.HeartData}>
-          <i class="fa-solid fa-heart-pulse"></i>
-          <p>78</p>
+          <ProductPreview />
         </div>
 
         <div className={classes.ProductData}>
