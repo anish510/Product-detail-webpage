@@ -1,0 +1,15 @@
+.Topbar{
+    background-color: black;
+    padding: 5px 2px 5px;
+    display: grid;
+    place-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.Topbar > img{
+
+    width: 150px;
+
+}

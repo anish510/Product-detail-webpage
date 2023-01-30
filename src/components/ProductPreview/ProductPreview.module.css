@@ -1,6 +1,6 @@
 .ProductPreview{
     width : 100%;
-    position: relative;
+    position: relative ;
    
 }
 
@@ -10,8 +10,8 @@
 
 .TimeData{
     position: absolute;
-    top:50%;
-    left: 33.54%;
+    top:48%;
+    left: 49%;
     transform: translate(-50%, -50%);
     font-size: 48px;
     font-weight: 600;
@@ -38,7 +38,7 @@
 .HeartData{
     position: absolute;
     top:50%;
-    left: 33.54%;
+    left: 50%;
     transform: translate(-50%, -50%);
     font-size: 48px;
     font-weight: 600;
