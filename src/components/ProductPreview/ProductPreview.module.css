@@ -13,11 +13,23 @@
     top:48%;
     left: 49%;
     transform: translate(-50%, -50%);
-    font-size: 48px;
+    font-size: 45px;
     font-weight: 600;
 
     color: white;
 }
+
+@media (max-width: 720px) {
+    .TimeData {
+      font-size: 36px;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .TimeData {
+      font-size: 24px;
+    }
+  }
 
 .HeartData >i{
     color: red;
